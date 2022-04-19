@@ -1,4 +1,4 @@
-//Write a program to take input of the total marks of four subjects of a student and calculate the total percentage secured. T
+package src;//Write a program to take input of the total marks of four subjects of a student and calculate the total percentage secured. T
 import java.util.Scanner;
 
 public class Q_03_percentage_input {
