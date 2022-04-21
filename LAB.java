@@ -1,5 +1,5 @@
-public class LAB {
-    mport java.util.Scanner;
+class LAB {
+    import java.util.Scanner;
 
     public class Check_equal {
         public static void main(String[] args) {

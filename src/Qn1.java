@@ -194,13 +194,20 @@ import java.util.Scanner;
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             System.out.println("Enter month number: ");
+
             int month = input.nextInt();
             if (month==1||month==3||month==5||month==7||month==8||month==10||month==12) {
                 System.out.println("No. of Days: 31");
             } else if (month==4||month==6||month==9||month==11) {
                 System.out.println("No. of Days: 30");
             } else if (month==2) {
-                System.out.println("No. of Days: 28");
+                System.out.println("enter the year");
+                int year = input.nextInt();
+                if ((year%4==0&&year%100!=0)||year%400==0) {
+                    System.out.println("Leap Year so no of days is 29");
+                } else {
+                    System.out.println("Normal Year so no of year is 28");
+                }
             } else {
                 System.out.println("Invalid month number!");
             }
@@ -216,7 +223,6 @@ import java.util.Scanner;
             int angle2 = input.nextInt();
             System.out.println("Enter third angle: ");
             int angle3 = input.nextInt();
-
             if (angle1+angle2+angle3==180) {
                 System.out.println("Triangle is valid.");
             } else {
@@ -382,4 +388,27 @@ import java.util.Scanner;
             System.out.println("Total price: "+total);
         }
     }
+
+   class note {
+       public static void main(String[] args) {
+
+
+           Scanner scanner = new Scanner(System.in);
+           System.out.println("Enter a value:");
+           int amount = scanner.nextInt();
+           int total;
+           if (amount % 5 == 0) {
+               total = amount / 5;
+               System.out.println(total);
+           } else {
+               System.out.println("Invalid Figures");
+           }
+       }
+   }
+
+
+
+
+
+
 
