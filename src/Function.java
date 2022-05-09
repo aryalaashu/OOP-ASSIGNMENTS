@@ -16,7 +16,7 @@ public class Function {
 //    Static function without any parameters and return type
     public static String helloWorld( String data){
 //        System.out.println("Hello World");
-Fu
+
 
         return data;
     }
