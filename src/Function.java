@@ -143,3 +143,65 @@ class PrimeComposite {
     }
 }
 
+class Prime_between_30_and_50 {
+    public static void main(String[] args) {
+        primeBetween30and50();
+    }
+
+    public static void primeBetween30and50 () {
+
+        for (int num = 30; num <= 50; num++) {
+            int factors = 0;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    factors = 1;
+                    break;
+                }
+            }
+            if (factors == 0) {
+                System.out.println(num);
+            }
+        }
+
+
+    }
+}
+
+//write a java program to find  sum of multiples of 5 and 11 which are present in the between of a and b
+class Sum_of_multiples_of_5_and_11{
+    public static void main(String[] args) {
+        sumMultiples();
+
+    }
+     public static void sumMultiples(){
+
+                 Scanner input = new Scanner(System.in);
+                 int a,b;
+                 do {
+                     System.out.println("Enter starting point: ");
+                     a = input.nextInt();
+                     System.out.println("Enter ending point: ");
+                     b = input.nextInt();
+                 } while (a>b);
+
+                 System.out.println("Sum: "+multiple(a,b));
+             }
+
+             public static int multiple (int start, int end) {
+                 int sum=0;
+                 for (int a = start; a<=end; a++ ) {
+                     if (a%5==0&&a%11==0) {
+                         sum+=a;
+                     }
+                 }
+                 return sum;
+             }
+         }
+
+
+
+
+
+
+
+
